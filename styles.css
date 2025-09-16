@@ -189,3 +189,161 @@ footer {
     margin-bottom: 3%; /* spacing below */
     padding-bottom: 3%; 
 }
+
+/* ABOUT PAGE STYLES
+   Author: Ngoi Ye Sheng
+   Purpose: Styling for about.html only */
+
+/* -------- General Page Styling -------- */
+.about-page {
+    font-family: Arial, sans-serif;  /* simple and clean font */
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------- Header -------- */
+.about-page header {
+    background-color: lightgray;
+    padding: 15px;
+    border-bottom: 3px solid navy;
+    text-align: center;
+}
+
+/* Make logo + title align nicely */
+.about-page h1 {
+    color: navy;
+    font-size: 2.2em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center horizontally */
+    gap: 10px; /* space between logo and text */
+}
+
+.about-page h1 img {
+    height: 50px;
+    width: auto;
+}
+
+/* -------- Navigation -------- */
+.about-page nav a {
+    text-decoration: none;
+    color: navy;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.about-page nav a:hover {
+    color: darkred;
+}
+
+/* -------- Section Layout -------- */
+.about-page section {
+    background: #ffffff;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px lightgray;
+}
+
+.about-page h2 {
+    color: teal;
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Remove bullets for Group Members only */
+.about-page .group-members ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.about-page li {
+    margin: 5px 0;           /* add spacing between names */
+}
+
+/* -------- Student IDs -------- */
+.about-page .student-id {
+    float: right;                 /* align IDs to the right */
+    color: darkred;
+    font-style: italic;
+}
+
+/* -------- Contributions & Lists -------- */
+.about-page dl dt {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.about-page dl dd {
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+/* -------- Group Photo -------- */
+.about-page figure {
+    float: right;                          /* float photo right */
+    margin: 10px 20px;
+    text-align: center;
+    border: 3px solid gray;                /* shorthand border */
+    border-radius: 8px;
+    padding: 5px;
+    background: #fafafa;
+}
+
+
+
+.about-page figure img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+
+/* -------- Table Styling -------- */
+.about-page table {
+    border-collapse: collapse;
+    margin: 20px auto;                     /* centered */
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-page th, 
+.about-page td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.about-page th {
+    background-color: #d3d3d3;             /* light gray in hex */
+    font-weight: bold;
+    color: navy;
+}
+
+.about-page td {
+    background-color: #f5f5f5;             /* very light gray in hex */
+}
+
+/* Hover effect */
+.about-page td:hover {
+    background-color: #e0ffff;             /* light cyan in hex */
+}
+
+/* -------- Footer -------- */
+.about-page footer {
+    background-color: lightgray;
+    border-top: 3px solid navy;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: black;
+    clear: both;                           /* fix float overflow */
+}
