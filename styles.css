@@ -347,3 +347,94 @@ footer {
     color: black;
     clear: both;                           /* fix float overflow */
 }
+
+/* Joe Yee's Part */
+/* Create a box like real form */
+.form-box 
+{
+    max-width: 600px;
+    margin: auto;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: white;
+    display: flex;             
+    flex-direction: column;     
+    gap: 1em;                  
+    font-family: sans-serif;
+}
+
+/* Group wrapper (label + input) */
+.form-details 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Design the form labels */
+.form-label 
+{
+    font-weight: bold;
+    margin-bottom: 0.5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Align the checkbox */
+.form-checkbox 
+{
+    display: grid;
+    gap: 0.8em; 
+}
+
+/* Design the Inputs, select, textarea */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea 
+{
+    padding: 1.5%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+/* Design and setting for the apply form button */
+.form-button 
+{
+    margin: auto; 
+    padding: 2% 3%;
+    background-color: lightblue;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* When the cursor touch the apply form button the colour will change */
+.form-button:hover 
+{
+    background-color: lightskyblue;
+}
+
+/* Show * for the text box that are required to fill up */
+.form-label::after 
+{
+    content: " *";
+    color: red;
+}
+
+/* Remove the star */
+label[for="CV_Upload"]::after 
+{
+    content: ""; 
+}
+
+/* Form header shadow effect */
+.form-title {
+    text-align: center;
+    text-shadow: 
+    0 0 5px Navy, /* layer 1 for inner */
+    0 0 10px turquoise, /* layer 2 for center */
+    0 0 20px white; /* layer 3 for outer */
+}
