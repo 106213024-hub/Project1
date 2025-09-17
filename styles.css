@@ -437,3 +437,62 @@ label[for="CV_Upload"]::after
     0 0 10px turquoise, /* layer 2 for center */
     0 0 20px white; /* layer 3 for outer */
 }
+
+/* Index Page - Daniel Yong Tze Ming */
+
+.index-page {
+    font-family: Arial, sans-serif;  /* simple and clean font */
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------- Header -------- */
+.index-page header {
+    padding: 15px;
+    border-bottom: 3px solid white;
+    text-align: center;
+}
+
+/* Make logo + title align nicely */
+.index-page h1 {
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center horizontally */
+    gap: 10px; /* space between logo and text */
+}
+
+.index-page h1 img {
+    height: 50px;
+    width: auto;
+}
+
+/* -------- Navigation -------- */
+.index-page nav a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.index-page nav a:hover {
+    color: darkred;
+}
+
+/* -------- Section Layout -------- */
+
+.index-page section {
+    background: #ffffff;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px lightgray;
+}
