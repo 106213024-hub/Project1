@@ -465,6 +465,7 @@ label[for="CV_Upload"]::after
     align-items: center;
     justify-content: center; /* center horizontally */
     gap: 10px; /* space between logo and text */
+    animation: fadeIn 4s ease-out;
 }
 
 .index-page h1 img {
@@ -478,6 +479,7 @@ label[for="CV_Upload"]::after
     color: white;
     font-weight: bold;
     margin: 0 10px;
+    animation: fadeIn 4s ease-out;
 }
 
 .index-page nav a:hover {
@@ -487,12 +489,27 @@ label[for="CV_Upload"]::after
 /* -------- Section Layout -------- */
 
 .index-page section {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.75);
     border: 1px solid gray;
+    font-family: 'Times New Roman', serif;
     border-radius: 8px;
     padding: 15px 20px;
     margin: 20px auto;
     width: 90%;
     max-width: 900px;
     box-shadow: 0 4px 8px lightgray;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1s; /* Delay to start after header */
+    transform: scale(0.90);
+    transition: transform 0.3s ease;
+}
+
+@keyframes fadeIn {  /* Fade-in animation */
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.index-page section:hover {
+    transform: scale(1.05);
 }
