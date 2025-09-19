@@ -431,40 +431,35 @@ footer {
     clear: both;                           /* fix float overflow */
 }
 
-/* Joe Yee's Part */
+/* Joe Yee's Part - Apply Page Styling */
 /* Create a box like real form */
-.form-box 
-{
-    max-width: 600px;
-    margin: auto;
-    padding: 2%;
+.form-box {
+    max-width: 600px; /* Limit the width of the form */
+    margin: auto; /* Center the form on the page */
+    padding: 2%; /* Space inside the form */
     border: 1px solid black;
     border-radius: 8px;
     background: white;
-    display: flex;             
-    flex-direction: column;     
-    gap: 1em;                  
-    font-family: sans-serif;
+    display: flex; /* Use flexbox for layout */         
+    flex-direction: column; /* Stack children vertically */
+    gap: 1em;   
+    box-shadow: 0 4px 8px lightgray;               
 }
 
 /* Group wrapper (label + input) */
-.form-details 
-{
+.form-details {
     display: flex;
     flex-direction: column;
 }
 
 /* Design the form labels */
-.form-label 
-{
+.form-label-required, .form-label {
     font-weight: bold;
     margin-bottom: 0.5%;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Align the checkbox */
-.form-checkbox 
-{
+.form-checkbox {
     display: grid;
     gap: 0.8em; 
 }
@@ -475,42 +470,43 @@ input[type="email"],
 input[type="date"],
 input[type="tel"],
 select,
-textarea 
-{
+textarea {
     padding: 1.5%;
     border: 1px solid lightgray;
     border-radius: 6px;
 }
 
 /* Design and setting for the apply form button */
-.form-button 
-{
+.form-button {
     margin: auto; 
-    padding: 2% 3%;
-    background-color: lightblue;
+    padding: 2% 3%; /* Top/Bottom 2%, Left/Right 3% */
     color: black;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
+    cursor: pointer; /* Pointer cursor on hover */
+    
+    animation: colorCycle 6s linear infinite; /* Animation for the button */
+}
+
+/* Animation for the button */
+@keyframes colorCycle {
+    0%   { background-color: lightblue; }
+    25%  { background-color: cadetblue; }
+    50% { background-color: powderblue; }
+    75%  { background-color: cornflowerblue; }
+    50% { background-color: powderblue; }
+    100%  { background-color: skyblue; }
 }
 
 /* When the cursor touch the apply form button the colour will change */
-.form-button:hover 
-{
+.form-button:hover {
     background-color: lightskyblue;
 }
 
 /* Show * for the text box that are required to fill up */
-.form-label::after 
-{
+.form-label-required::after {
     content: " *";
     color: red;
-}
-
-/* Remove the star */
-label[for="CV_Upload"]::after 
-{
-    content: ""; 
 }
 
 /* Form header shadow effect */
