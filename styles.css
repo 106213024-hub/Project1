@@ -458,12 +458,6 @@ footer {
     margin-bottom: 0.5%;
 }
 
-/* Align the checkbox */
-.form-checkbox {
-    display: grid;
-    gap: 0.8em; 
-}
-
 /* Design the Inputs, select, textarea */
 input[type="text"],
 input[type="email"],
