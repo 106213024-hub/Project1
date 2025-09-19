@@ -80,7 +80,7 @@ aside /* easy access for users */ {
     align-items: center;
     justify-content: center;
     height:  1em;
-    margin: 20% 8%;
+    margin: 6% 5%;
     padding: 0;
     color: whitesmoke;
     font-family:  "Geologic", sans-serif;
@@ -114,7 +114,7 @@ aside /* easy access for users */ {
     align-items: center;
     justify-content: center;
     height: 32%;
-    margin: 20% 5%;
+    margin: 10% 3%;
     padding: 0;
     color: whitesmoke;
     font-family:  "Geologic", sans-serif;
@@ -143,6 +143,92 @@ aside /* easy access for users */ {
     50% {transform: translateY(-200%);}
     100% {transform: translateY(-400%);}
 }
+
+/* Outer container scrolls horizontally */
+/* Make the page scroll horizontally */
+.slider-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 2rem;
+}
+
+.slider-container {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  background: #0a1f3d;
+  color: white;
+  box-shadow: 0 8px 20px gray;
+  transition: transform 0.3s ease;
+}
+
+.slider-container:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* Inner container holds all cards side-by-side */
+.slider-images {
+  display: flex;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 2rem;
+}
+
+/* Each card */
+.slider-img {
+  flex: 0 0 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  box-shadow: 0 8px 20px gray;
+}
+
+/* Image styling */
+.slider-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+}
+
+/* Hover effect */
+.slider-img:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.slider-img:hover img {
+  filter: brightness(100%);
+}
+
+/* Details overlay */
+.details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.details h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details .subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
 
 
 body /* for the container purposes */ {
@@ -297,8 +383,6 @@ footer {
     padding: 5px;
     background: #fafafa;
 }
-
-
 
 .about-page figure img {
     max-width: 250px;
