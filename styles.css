@@ -9,17 +9,7 @@ description: [index.html, jobs.html, apply.html, about.html]
 /*===========================================================================*/
 /* CSS - INDEX.HTML */
 /* -------- Navigation -------- */
-.index-page nav a {
-    text-decoration: underline;
-    color: white;
-    font-weight: bold;
-    margin: 0 5px;
-    animation: fadeIn 4s ease-out;
-}
 
-.index-page nav a:hover {
-    color: lightsteelblue;
-}
 
 .index-title h2 {
     display: flex;
