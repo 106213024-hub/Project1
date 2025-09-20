@@ -32,7 +32,7 @@ description: [index.html, jobs.html, apply.html, about.html]
     font-family:  "Arial", sans-serif;
     font-size: 4em;
     font-weight: 700;
-    letter-spacing: -1.75px;
+    letter-spacing: -1.75px; /* to place the message as centre as possible */
     position: relative;
     overflow: hidden;
     background: linear-gradient(270deg,blue,darkorange,purple,lightskyblue);
@@ -105,7 +105,7 @@ description: [index.html, jobs.html, apply.html, about.html]
     margin: 1rem auto;
     padding: 1.5rem;
     max-width: 600px;
-    list-style-type: none;
+    list-style-type: none; /* remove default bullets */
     text-align: center;
     background: linear-gradient(270deg, blue,lightskyblue);
     background-size: 400%;
@@ -133,7 +133,7 @@ description: [index.html, jobs.html, apply.html, about.html]
     }
 }
 
-.index-button {
+.index-button { /* button for job position link */
   display: block; /* make the button sits at the center of the page */
   text-align: center;
   margin: 3% auto; /* centers horizontally */
@@ -154,7 +154,7 @@ description: [index.html, jobs.html, apply.html, about.html]
     background-size: cover;
 }
 
-.last-title { /* button to jobs page */
+.last-title { /* last message */
     font-family: "Arial", sans-serif;
     font-size: 2em;
     background: linear-gradient(270deg,lightblue,navy,lightskyblue);
@@ -165,7 +165,7 @@ description: [index.html, jobs.html, apply.html, about.html]
     animation-delay: 0.5s;
 }
 
-@keyframes spotlightFocus {
+@keyframes spotlightFocus { /* to change opacity, width, height and brightness */
   0% {
     opacity: 0;
     transform: scale(0.8);
