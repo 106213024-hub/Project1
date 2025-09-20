@@ -38,10 +38,10 @@ description: [index.html, jobs.html, apply.html, about.html]
     background-size: 400%;
     background-clip: text;
     color: transparent;
-    animation: text-animation 10s linear infinite;
+    animation: text-animation 10s linear infinite; /* runs indefinitely */
 }
 
-@keyframes text-animation {
+@keyframes text-animation { /* alternates between the colors stated */
     0% {
         background-position: 0%;
     }
@@ -114,7 +114,7 @@ description: [index.html, jobs.html, apply.html, about.html]
     animation: bounce 6s infinite ease-in-out, border-animation 10s infinite linear;
 }
 
-@keyframes bounce {
+@keyframes bounce { /* moves text up and down */
   0%, 100% {
     transform: translateY(0);
   }
@@ -160,11 +160,11 @@ description: [index.html, jobs.html, apply.html, about.html]
     background-clip: text;
     color: transparent;
     text-align: center;
-    animation: spotlightFocus 1.5s ease-out forwards;
+    animation: spotlightFocus 1.5s ease-out forwards; /* appearance effects */
     animation-delay: 0.5s;
 }
 
-@keyframes spotlightFocus {
+@keyframes spotlightFocus { /* changes opacity, width, height and brightness */
   0% {
     opacity: 0;
     transform: scale(0.8);
