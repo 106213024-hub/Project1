@@ -6,6 +6,9 @@ last modified: [? September 2025]
 description: [index.html, jobs.html, apply.html, about.html]
 */
 
+
+/* CSS - INDEX.HTML */
+
 /* -------- Navigation -------- */
 .index-page nav a {
     text-decoration: underline;
@@ -16,21 +19,23 @@ description: [index.html, jobs.html, apply.html, about.html]
 }
 
 .index-page nav a:hover {
-    color: darkred;
+    color: lightsteelblue;
 }
 
-/*------ Title ------*/
 .index-title h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    height:  1em;
     margin-bottom: -15%; /* negative -15% to make h3 below h2 */
     padding: 12%;
     font-family:  "Arial", sans-serif;
     font-size: 4em;
-    font-weight: 700; /* turns the word bolder */
+    font-weight: 700;
     letter-spacing: -1.75px;
-    background: linear-gradient(270deg,navy,blue,darkorange,purple,lightskyblue);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(270deg,blue,darkorange,purple,lightskyblue);
     background-size: 400%;
     background-clip: text;
     color: transparent;
@@ -48,15 +53,17 @@ description: [index.html, jobs.html, apply.html, about.html]
 
 .index-title h3 {
     display: block;
-    text-align: center; /* words sit on the center of the page */
+    text-align: center;
     margin-top: 0;
     margin-bottom: -6%;
     padding: 5%;
     font-family:  "Arial", sans-serif;
     font-size: 3em;
-    font-weight: 550; /* bold words */
+    font-weight: 550;
     letter-spacing: -1.75px;
-    background: linear-gradient(270deg,navy,blue,lightskyblue);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(270deg,blue,lightskyblue);
     background-size: 400%;
     background-clip: text;
     color: transparent;
@@ -76,7 +83,7 @@ description: [index.html, jobs.html, apply.html, about.html]
   display: block;
   text-align: center;
   font-family: "Arial", sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   color: lightblue;
   font-weight: 500;
   margin-top: 5%;
@@ -100,7 +107,7 @@ description: [index.html, jobs.html, apply.html, about.html]
     max-width: 600px;
     list-style-type: none;
     text-align: center;
-    background: linear-gradient(270deg, navy, blue,lightskyblue);
+    background: linear-gradient(270deg, blue,lightskyblue);
     background-size: 400%;
     border-radius: 100%;
     border: 8px double lightgray;
@@ -131,7 +138,7 @@ description: [index.html, jobs.html, apply.html, about.html]
   text-align: center;
   margin: 3% auto; /* centers horizontally */
   padding: 1% 2%;
-  background:url(images/fade.jpg); /* fade effect */
+  background:url(styles/images/fade.jpg);
   color: black;
   border: none;
   border-radius: 10px;
@@ -143,7 +150,8 @@ description: [index.html, jobs.html, apply.html, about.html]
 
 
 .index-button:hover /*when cursor move, it changed color*/ {
-    background-color: darkgrey;
+    background:url(styles/images/fade2.jpg);
+    background-size: cover;
 }
 
 .last-title {
@@ -160,8 +168,8 @@ description: [index.html, jobs.html, apply.html, about.html]
 @keyframes spotlightFocus {
   0% {
     opacity: 0;
-    transform: scale(1.5);
-    filter: brightness(1.2);
+    transform: scale(0.8);
+    filter: brightness(0.5);
   }
   50% {
     opacity: 1;
@@ -170,12 +178,12 @@ description: [index.html, jobs.html, apply.html, about.html]
   }
   100% {
     opacity: 1;
-    transform: scale(1.2); /* zoom out */
-    filter: brightness(2);
+    transform: scale(1);
+    filter: brightness(1);
   }
 }
 
-
+/* CSS - JOBS.HTML */
 /*qiaoen's part*/
 header {
     display: flex;
@@ -189,10 +197,11 @@ header {
     height: auto;
 }
 
+/*------ Background images ------*/
 body {
-    background-image: url("images/background6.jpeg");
+    background-image: url(styles/images/background6.jpeg);
     background-size: 100%;
-    background-repeat: repeat-y; /* repeats vertically */
+    background-repeat: repeat-y; /* repeat horizontally */
 }
 
 
@@ -202,25 +211,24 @@ h1 /* shorthand font property */ {
     font-size: 2em;
     line-height: 1.2%;
     color: antiquewhite;
-    font-family:  "Arial", sans-serif; 
+    font-family: "Arial", sans-serif; /*font will be change*/
 }
 
 .job-details h1 {
-    font: small-caps normal 2em/1.2% antiquewhite "Arial", sans-serif; /* from shorthand property */
+    font: small-caps normal 2em/1.2% antiquewhite "Arial", sans-serif;
 }
 
-/*------ Navigation Bar ------*/
+/*------ Navigation Bar -------*/
 nav a {
     
     color: lightgray;
     font-weight: bold;
 }
 
-nav a:hover /* Changes the color when mouse clicked on */ {
-    color: darkred;
+nav a:hover {
+    color: lightsteelblue;
 }
 
-/*------ More Details Button ------*/
 .button /* button function */ {
     display: inline-block;
     padding: 1% 2%;
@@ -236,7 +244,6 @@ nav a:hover /* Changes the color when mouse clicked on */ {
     background-color: darkgrey;
 }
 
-/*------ Aside ------*/
 aside /* easy access for users */ {
     width: 25%;
     float: right; /* aside floating to the right */
@@ -247,7 +254,6 @@ aside /* easy access for users */ {
     background-size: 30%;
 }
 
-/*------ Title - We're Hiring ... ------*/
 .job-positions h2 {
     display: flex;
     align-items: center;
@@ -269,7 +275,6 @@ aside /* easy access for users */ {
     overflow: hidden;
 }
 
-/*------ Animation ------*/
 .job-positions h2 > span > span {
     display: block;
     animation: animateWordsH2 7s infinite ease;
@@ -277,10 +282,10 @@ aside /* easy access for users */ {
 
 @keyframes animateWordsH2 {
     0% {transform: translateY(0%);}
-    25% {transform: translateY(-100%);} /* moves up */
-    50% {transform: translateY(-200%);} /* moves up */
-    75% {transform: translateY(-300%);} /* moves up */
-    100% {transform: translateY(-400%);} /* moves up */
+    25% {transform: translateY(-100%);}
+    50% {transform: translateY(-200%);}
+    75% {transform: translateY(-300%);}
+    100% {transform: translateY(-400%);}
 }
 
 .job-positions h3 {
@@ -314,40 +319,39 @@ aside /* easy access for users */ {
 
 @keyframes animateWordsH3 {
     0% {transform: translateY(0%);}
-    50% {transform: translateY(-200%);} /* moves up */
-    100% {transform: translateY(-400%);} /* moves up */
+    50% {transform: translateY(-200%);}
+    100% {transform: translateY(-400%);}
 }
 
 /* Outer container scrolls horizontally */
 /* Make the page scroll horizontally */
-/*------ Images slider ------*/
 .slider-track {
   display: flex;
   gap: 20px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory; /* scrolls horizontally */
+  scroll-snap-type: x mandatory;
   padding: 2rem;
 }
 
 .slider-container {
-  flex: 0 0 300px; /* sets a fixed width of 300px */
+  flex: 0 0 300px;
   scroll-snap-align: start;
   border-radius: 12px;
-  background: navy;
+  background: #0a1f3d;
   color: white;
   box-shadow: 0 8px 20px gray;
   transition: transform 0.3s ease;
 }
 
 .slider-container:hover {
-  transform: scale(1.05); /* the card zooms in */
+  transform: scale(1.05);
   z-index: 1;
 }
 
 /* Inner container holds all cards side-by-side */
 .slider-images {
-  display: flex; /* horizontal row */
-  gap: 20px; /* spacing between cards */
+  display: flex;
+  gap: 20px;
   scroll-snap-type: x mandatory;
   scroll-padding: 2rem;
 }
@@ -358,7 +362,7 @@ aside /* easy access for users */ {
   height: 400px;
   position: relative;
   border-radius: 12px;
-  overflow: hidden; /* cuts off anything outside */
+  overflow: hidden;
   scroll-snap-align: start;
   transition: transform 0.5s ease, filter 0.5s ease;
   box-shadow: 0 8px 20px gray;
@@ -366,21 +370,21 @@ aside /* easy access for users */ {
 
 /* Image styling */
 .slider-img img {
-  width: 100%; /* image fully fill the card */
-  height: 100%; /* image fully fill the card */
-  object-fit: cover; /* covers without distortion */
-  filter: brightness(70%); /* darker image at first */
-  transition: filter 0.3s ease; /* transition turns the image brighter */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
 }
 
 /* Hover effect */
 .slider-img:hover {
-  transform: scale(1.05); /* card zooms in */
+  transform: scale(1.05);
   z-index: 1;
 }
 
 .slider-img:hover img {
-  filter: brightness(100%); /* image turns bright when cursor moves */
+  filter: brightness(100%);
 }
 
 /* Details overlay */
@@ -493,7 +497,7 @@ footer {
 }
 
 .about-page nav a:hover {
-    color: darkred;
+    color: lightsteelblue;
 }
 
 /* -------- Section Layout -------- */
