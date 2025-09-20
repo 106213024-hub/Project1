@@ -9,17 +9,28 @@ description: [index.html, jobs.html, apply.html, about.html]
 /*===========================================================================*/
 /* CSS - INDEX.HTML */
 /* -------- Navigation -------- */
+.index-page nav a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    margin: 0 5px;
+    animation: fadeIn 4s ease-out;
+}
 
+.index-page nav a:hover {
+    color: lightsteelblue;
+}
 
 .index-title h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height:  1em;
-    margin-bottom: -15%; /* negative -15% to make h3 below h2 */
-    padding: 12%;
+    flex-wrap: wrap;
+    margin: 0; 
+    padding-top: 3em; /* space on top */
+    padding-bottom: 0.25em; /* space below the words */
     font-family:  "Arial", sans-serif;
-    font-size: 4em;
+    font-size: 4.5em;
     font-weight: 700;
     letter-spacing: -1.75px;
     position: relative;
@@ -43,9 +54,8 @@ description: [index.html, jobs.html, apply.html, about.html]
 .index-title h3 {
     display: block;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: -6%;
-    padding: 5%;
+    margin: 0;
+    padding: 0;
     font-family:  "Arial", sans-serif;
     font-size: 3em;
     font-weight: 550;
@@ -72,10 +82,21 @@ description: [index.html, jobs.html, apply.html, about.html]
     display: block;
     text-align: center;
     font-family: "Arial", sans-serif;
+    font-size: 1.2em;
+    color: lightblue;
+    font-weight: 500;
+    margin-top: 20em;
+    margin-bottom: 3em;
+}
+
+.small-title {
+    display: block;
+    text-align: center;
+    font-family: "Arial", sans-serif;
     font-size: 1.1em;
     color: lightblue;
     font-weight: 500;
-    margin-top: 5%;
+    margin-top: 2em;
 }
 
 .third-title {
@@ -150,7 +171,7 @@ description: [index.html, jobs.html, apply.html, about.html]
     background-clip: text;
     color: transparent;
     text-align: center;
-    animation: spotlightFocus 1.5s ease-out forwards; /* appearance effects */
+    animation: spotlightFocus 3s ease-out infinite; /* appearance effects */
     animation-delay: 0.5s;
 }
 
@@ -180,6 +201,7 @@ header {
     align-items: center;
     gap: 2%;
     padding: 0%;
+    flex-wrap: wrap; /* wrap to make sure the fluid layout */
 }
 
 .logo {
@@ -197,8 +219,7 @@ body {
 
 
 h1 /* shorthand font property */ {
-    font-variant: small-caps;
-    font-weight: normal; /* regular font weight */
+    font-weight: bold; /* regular font weight */
     font-size: 2em; 
     line-height: 1.2%;
     color: antiquewhite;
@@ -206,12 +227,11 @@ h1 /* shorthand font property */ {
 }
 
 .job-details h1 {
-    font: small-caps normal 2em/1.2% antiquewhite "Arial", sans-serif;
+    font: bold 2em/1.2% antiquewhite "Arial", sans-serif;
 }
 
 /*------ Navigation Bar -------*/
 nav a {
-    
     color: lightgray;
     font-weight: bold; /* bold links */
 }
@@ -242,13 +262,14 @@ aside /* easy access for users */ {
     margin: 2%; /* outer spacing */
     padding: 1.5%; /* inner spacing */
     background:url("images/fade.jpg") repeat-x center center; /* repeat horizontally */
-    background-size: 30%;
+    background-size: contain; /* puts contain to make sure fluid layout */
 }
 
 .job-positions h2 {
     display: flex; /* centers the words horizontally  */
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     height:  1em;
     margin: 6% 5%; /* spacing for header 2 */
     padding: 0;
@@ -382,20 +403,20 @@ aside /* easy access for users */ {
 /* Details overlay */
 .details {
     position: absolute; /* positioned relative to .slider-img */
-    bottom: 20px;
-    left: 20px;
+    bottom: 1.25em;
+    left: 1.25em;
     color: white; 
     z-index: 2; /* to control stacking order, appears on top of the image*/
 }
 
 .details h3 {
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 31.35%;
 }
 
 .details .subtitle {
-    font-size: 14px;
+    font-size: 0.9em;
     opacity: 0.9; /* lower transparency to make it more subtle */
 }
 
