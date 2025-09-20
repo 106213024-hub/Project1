@@ -79,22 +79,22 @@ description: [index.html, jobs.html, apply.html, about.html]
 }
 
 .sec-title {
-  display: block;
-  text-align: center;
-  font-family: "Arial", sans-serif;
-  font-size: 1.1em;
-  color: lightblue;
-  font-weight: 500;
-  margin-top: 5%;
+    display: block;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 1.1em;
+    color: lightblue;
+    font-weight: 500;
+    margin-top: 5%;
 }
 
 .third-title {
-  display: block;
-  text-align: center;
-  font-family: "Arial", sans-serif;
-  font-size: 1.2em;
-  color: lightgray;
-  font-weight: 500;
+    display: block;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 1.2em;
+    color: lightgray;
+    font-weight: 500;
 }
 
 .job-lists {
@@ -133,18 +133,18 @@ description: [index.html, jobs.html, apply.html, about.html]
 }
 
 .index-button {
-  display: block; /* make the button sits at the center of the page */
-  text-align: center;
-  margin: 3% auto; /* centers horizontally */
-  padding: 1% 2%;
-  background:url(styles/images/fade.jpg);
-  color: black;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px lightblue;
-  font-size: 1em;
-  max-width: fit-content; /* prevent streching over the page */
-  cursor: pointer;
+    display: block; /* make the button sits at the center of the page */
+    text-align: center;
+    margin: 3% auto; /* centers horizontally */
+    padding: 1% 2%;
+    background:url(styles/images/fade.jpg);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px lightblue;
+    font-size: 1em;
+    max-width: fit-content; /* prevent streching over the page */
+    cursor: pointer;
 }
 
 
@@ -199,6 +199,7 @@ header {
 
 /*------ Background images ------*/
 body {
+    font-family: "Arial", sans-serif;
     background-image: url(styles/images/background6.jpeg);
     background-size: 100%;
     background-repeat: repeat-y; /* repeat vertically */
