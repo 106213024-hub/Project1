@@ -527,11 +527,6 @@ textarea {
     100%  { background-color: skyblue; }
 }
 
-/* When the cursor touch the apply form button the colour will change */
-.form-button:hover {
-    background-color: lightskyblue;
-}
-
 /* Show * for the text box that are required to fill up */
 .form-label-required::after {
     content: " *";
