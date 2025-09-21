@@ -548,16 +548,16 @@ textarea {
    Purpose: Styling for about.html only */
    /* CSS - ABOUT.HTML */
 
-  .about-page h2  {
+.about-page h2  {
     font-weight: bold;
-    font-size: 1.9em;
+    font-size: 1.5em;
     color: black;
     font-family:  "Arial", sans-serif; /*font will be change*/
 }
 
 .about-page p  {
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: black;
     font-family:  "Arial", sans-serif; /*font will be change*/
 }
@@ -596,14 +596,14 @@ textarea {
 
 /* -------- Group Members -------- */
 .group-members {
-    flex: 1;
-    max-width: 75%; 
+    display: grid;
+    grid-template-columns: 30% 70%;
     text-align: right; 
     float: right;
-    width: 130%;
+    width: 50%;
     max-width: 80%;
-    margin: 5% 2%;
-    padding: 1.5em 1.5em;
+    margin: 2%;
+    padding: 5%;
     background: #dcf2ff;
     background-size: 15%;
     border-radius: 12px;
