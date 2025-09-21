@@ -1,74 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <meta name="description" content="Group Details page of our cybersecurity company">
     <meta name="keywords" content="cybersecurity, security, IT, protection">
     <meta name="author" content="Quantum Shield's website developers">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="about-page">
-    <header>
-        <h1><img src="images/Quantum_Shield_Logo.png" alt="Quantum Shield Logo" class="logo" width="50" height="50"><strong> About Us</strong></h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="jobs.html">Job Details</a> |
-            <a href="apply.html">Application Form</a> |
-            <a href="about.html">About Us</a> |
-            <a href="mailto:info@quantumshield.com.au">Contact Us</a>
-        </nav>
-        <hr>
-    </header>
+<header>
+    <img src="images/Quantum_Shield_Logo.png" alt="Quantum Shield Logo" class="logo">
+    <h1>About Us</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="jobs.html">Job Details</a> |
+        <a href="apply.html">Application Form</a> |
+        <a href="about.html">About Us</a> |
+        <a href="mailto:info@quantumshield.com.au">Contact Us</a>
+    </nav>
+</header>
 
-    <main>
-        <!-- Group Info -->
-        <section>
-            <h2>Group Information</h2>
-            <p><strong>Group Name:</strong> Quantum Shield Team</p>
-            <p><strong>Class Time & Day:</strong> Tuesday 4-6 PM, Wednesday 12-2 PM</p>
-            <p><strong>Tutor:</strong> Ms Pawani Rasaratnam</p>
+<hr>
+
+<main class="about-layout">
+    <!-- Group Name -->
+    <section class="group-name">
+        <h2>Quantum Shield Team</h2>
+    </section>
+
+    <!-- Row 1 -->
+    <section class="top-row">
+
+        <!-- Group Introduction -->
+        <div class="group-introduction">
+            <h2>Group Introduction</h2>
+            <p>
+                We are Quantum Shield, a dedicated team of cybersecurity enthusiasts committed to safeguarding digital environments. Our mission is to design innovative and reliable solutions that strengthen system defenses, protect sensitive data, and ensure the resilience of networks against evolving threats. With collaboration, creativity, and technical expertise, we strive to make the digital world a safer place.
+            </p>
+        </div>
+        
+
+        <!-- Group Members and Group Photo-->
+        <div class="stacked">
+            <!-- Group Members -->
+            <div class="group-members">
+                <h2>Group Members</h2>
+                <ul>
+                    <li>Ngoi Ye Sheng <span class="student-id">106213105</span></li>
+                    <li>Tan Qiao En <span class="student-id">106212885</span></li>
+                    <li>Daniel Yong Tze Ming <span class="student-id">106213024</span></li>
+                    <li>Wong Joe Yee <span class="student-id">106212966</span></li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Members -->
-        <section class="group-members">
-            <h2>Group Members</h2>
-            <ul>
-                <li>Ngoi Ye Sheng <span class="student-id">106213105</span></li>
-                <li>Tan Qiao En <span class="student-id">106212885</span></li>
-                <li>Daniel Yong Tze Ming <span class="student-id">106213024</span></li>
-                <li>Wong Joe Yee <span class="student-id">106212966</span></li>
-            </ul>
-        </section>
-
-        <!-- Contributions -->
         <section>
+                    <!-- Contributions -->
+        <div class="members-contributions">
             <h2>Members' Contributions</h2>
             <dl>
                 <dt>Ngoi Ye Sheng</dt>
-                <dd>Worked on about.html and styles.css</dd>
+                <dd>Contributed to the development of about.html, ensuring structured content and proper integration with CSS for styling consistency.
+                    Worked on styles.css to enhance the website's overall layout, responsiveness, and visual appeal.
+                    Actively participated in the Jira project by helping with task tracking, updating progress, and ensuring deadlines were met.</dd>
                 <dt>Tan Qiao En</dt>
-                <dd>Created jobs.html and CSS design</dd>
+                <dd>Designed and implemented the jobs.html page, presenting job listings with clear formatting and user-friendly structure.
+                    Contributed to CSS styling to improve readability, background, and visual hierarchy across the site.
+                    Engaged in Jira project management, monitoring progress and collaborating with team members to maintain workflow efficiency.</dd>
                 <dt>Daniel Yong Tze Ming</dt>
-                <dd>Developed index.html page and CSS design</dd>
+                <dd>Developed the index.html homepage, focusing on clear navigation, engaging layout, and accessibility.
+                    Assisted in CSS design to ensure a cohesive theme across all web pages.
+                    Used Jira for project coordination, updating task statuses and assisting in organizing sprint deliverables.</dd>
                 <dt>Wong Joe Yee</dt>
-                <dd>Handled apply.html and CSS design</dd>
-            </dl>
+                <dd>Created the apply.html page, implementing structured forms for user input and ensuring proper validation design.
+                    Supported CSS design work to maintain consistent styling with the rest of the website.
+                    Contributed to the Jira project board, collaborating with the team to track issues and ensure smooth project progress.</dd>
+                 </dl>
+                </div>
+
+            <!-- Group Photo -->
+            <div class="group-photo">
+                <h2>Group Photo</h2>
+                <figure>
+                    <figcaption>Our team during project discussion</figcaption>
+                    <a href="images/group-photo.jpg">
+                        <img src="images/group-photo.jpg" 
+                             alt="Quantum Shield Team project group photo" 
+                             title="Click to view larger image">
+                    </a>
+                </figure>
+            </div>
+        </div>
         </section>
+    
+
+    <!-- Row 2 -->
+    <section class="middle-row">
 
         <!-- Working Experience -->
-        <section>
+        <div class="working-experience">
             <h2>Working Experience</h2>
-
             <h3>Ngoi Ye Sheng</h3>
             <ul>
                 <li>Impactlution (2022 - present) - CSR Project Leader</li>
                 <li>Yomie Rice x Yogurt (2020 - 2021) - Barista & Cashier</li>
                 <li>Ahdi Greens (2016 - present) - Grocery Assistant</li>
-                <li>Atcen (2025 - present) - Assistant Trainer, Customer Service Program</li>
+                <li>Atcen (2025 - present) - Assistant Trainer</li>
             </ul>
 
             <h3>Tan Qiao En</h3>
@@ -96,64 +135,136 @@
                 <li>Teaching Assistant (May - Jun 2024)</li>
                 <li>Accounts Clerk (Mar 2025 - present)</li>
             </ul>
-        </section>
+        </div>
 
-        <!-- Group Photo -->
-        <section>
-            <h2>Group Photo</h2>
-            <figure>
-                <figcaption>Click the image to view the full group photo</figcaption>
-                <a href="images/group-photo.jpg">
-                    <img src="images/group-photo.jpg" 
-                         alt="Quantum Shield Team project group photo" 
-                         title="Click to view larger image" 
-                         width="250">
-                </a>
-            </figure>
-        </section>
+         <!-- Member's Interests -->
+       <div class="members-interests">
+    <h2>Members' Interests</h2>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Full Name</th>
+                <th scope="col">Interest</th>
+                <th scope="col">Extra Hobby</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ngoi Ye Sheng</td>
+                <td>Bodybuilding</td>
+                <td>Movies</td>
+            </tr>
+            <tr>
+                <td>Tan Qiao En</td>
+                <td>Swimming</td>
+                <td>Skateboarding</td>
+            </tr>
+            <tr>
+                <td>Daniel Yong Tze Ming</td>
+                <td>Gaming</td>
+                <td>Taking naps</td>
+            </tr>
+            <tr>
+                <td>Wong Joe Yee</td>
+                <td>Editing videos</td>
+                <td>Badminton</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-        <!-- Interests Table -->
-        <section>
-            <h2>Members' Interests</h2>
-            <table>
-                <caption>Group Interests</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Interest</th>
-                        <th scope="col">Extra</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Ngoi Ye Sheng</td>
-                        <td>Bodybuilding</td>
-                        <td>Movies</td>
-                    </tr>
-                    <tr>
-                        <td>Tan Qiao En</td>
-                        <td>Swimming</td>
-                        <td>Skateboarding</td>
-                    </tr>
-                    <tr>
-                        <td>Daniel Yong Tze Ming</td>
-                        <td>Gaming</td>
-                        <td>Taking naps</td>
-                    </tr>
-                    <tr>
-                        <td>Wong Joe Yee</td>
-                        <td>Editing videos</td>
-                        <td>None</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+    </section>
 
-        <footer class="footer">
-            <hr>
-            <p class="leftfooter">&copy; 2025 Quantum Shield. All rights reserved.</p >
-            <p class="rightfooter"><a href="https://danielyongtm.atlassian.net/jira/software/projects/PROJ/boards/34?atlOrigin=eyJpIjoiNjQxZjBlZDhhYmJlNDE0ZDhiOTU4MzdkYjQwNzg0OTMiLCJwIjoiaiJ9">View our Jira project</a ></p>
-        </footer>
+    <!-- Row 3 -->
+    <section class="bottom-row">
+        <!-- Y: Timetable -->
+        <div class="our-timetable">
+            <h2>Our Swinburne Timetable</h2>
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>08:00</th>
+      <th>09:00</th>
+      <th>10:00</th>
+      <th>11:00</th>
+      <th>12:00</th>
+      <th>13:00</th>
+      <th>14:00</th>
+      <th>15:00</th>
+      <th>16:00</th>
+      <th>17:00</th>
+    </tr>
+
+    <!-- MONDAY -->
+    <tr>
+      <td><b>MON</b></td>
+      <td colspan="2" class="course">COS10009 C1<br>(G-R2.5)<br>[LECTURE]</td>
+      <td colspan="2"></td>
+      <td colspan="2" class="course">MAT2208 C1<br>(F-CUBE4&5)<br>[LECTURE]</td>
+      <td colspan="2" class="course">COS10004 C1<br>(F-CUBE4&5)<br>[LECTURE]</td>
+      <td colspan="2"></td>
+
+    </tr>
+
+    <!-- TUESDAY -->
+    <tr>
+      <td><b>TUE</b></td>
+      <td colspan="2"></td>
+      <td colspan="2" class="course">COS10009 C1<br>(C-L2-MAC2)<br>[PRACTICAL]</td>
+      <td colspan="2" class="course">COS10004 C1<br>(C-L2-MAC2)<br>[PRACTICAL]</td>
+      <td colspan="2"></td>
+      <td colspan="2" class="course">COS10026 C1<br>(F-CUBE4&5)<br>[LECTURE]</td>
+    </tr>
+
+    <!-- WEDNESDAY -->
+    <tr>
+      <td><b>WED</b></td>
+      <td colspan="2"></td>
+      <td colspan="2" class="course">TNE10006 C2<br>(A-L4-LH1)<br>[LECTURE]</td>
+      <td colspan="2" class="course">COS10026 C1<br>(A-L4-CSC2)<br>[PRACTICAL]</td>
+      <td colspan="4"></td>
+    </tr>
+
+    <!-- THURSDAY -->
+    <tr>
+      <td><b>THU</b></td>
+      <td colspan="3"></td>
+      <td colspan="3"class="course">TNE10006 C2<br>(G-CISCO LAB)<br>[PRACTICAL]</td>
+      <td colspan="2"></td>
+      <td colspan="2" class="course">MAT2208 C1<br>(G-R2.5)<br>[LECTURE & TUTORIAL]</td>
+    </tr>
+
+    <!-- FRIDAY -->
+    <tr>
+      <td><b>FRI</b></td>
+      <td colspan="10"></td>
+    </tr>
+
+    <!-- SATURDAY -->
+    <tr>
+      <td><b>SAT</b></td>
+      <td colspan="10"></td>
+    </tr>
+
+    <!-- SUNDAY -->
+    <tr>
+      <td><b>SUN</b></td>
+      <td colspan="10"></td>
+    </tr>
+  </table>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <hr>
+    <p class="leftfooter">&copy; 2025 Quantum Shield. All rights reserved.</p>
+    <p class="rightfooter">
+        <a href="https://danielyongtm.atlassian.net/jira/software/projects/PROJ/boards/34">
+            View our Jira project
+        </a>
+    </p>
+</footer>
 </body>
 </html>
