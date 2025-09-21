@@ -604,10 +604,10 @@ textarea {
     max-width: 80%;
     margin: 5% 2%;
     padding: 1.5em 1.5em;
-    background: url(styles/images/fade.jpg);
+    background: #dcf2ff;
     background-size: 15%;
     border-radius: 12px;
-    box-shadow: 0 4px 10px gray;
+    box-shadow: 0 4px 10px rgb(128, 128, 128);
 }
 
 .group-members h2 {
@@ -645,7 +645,7 @@ textarea {
     margin: 1.2% 2%;
     padding: 1em 1em;
     padding-right: 13%;
-    background: url(styles/images/fade.jpg);
+    background: #dcf2ff;
     background-size: 15%;
     border-radius: 12px;
     box-shadow: 0 4px 10px gray;
@@ -682,7 +682,7 @@ textarea {
     max-width: 80%;
     margin: 1.2% auto;
     padding:2em 3em;
-    background: url(styles/images/fade.jpg);
+    background: #dcf2ff;
     background-size: 15%;
     border-radius: 12px;
     box-shadow: 0 4px 10px gray;
@@ -704,7 +704,7 @@ textarea {
     max-width: 80%;
     margin: 2% auto;
     padding: 2em 10%;
-    background: url(styles/images/fade.jpg);
+    background: #dcf2ff;
     background-size: 15%;
     border-radius: 12px ;
     box-shadow: 0 4px 10px gray;
@@ -723,7 +723,7 @@ textarea {
     max-width: 80%;
     margin: 2% auto;
     padding: 2em 0.5em;
-    background: url(styles/images/fade.jpg); /* subtle pattern */
+    background: #dcf2ff;
     background-size: 15%; 
     border-radius: 12px ;
     box-shadow: 0 4px 10px gray;
@@ -764,7 +764,7 @@ textarea {
     max-width: 90%;
     margin: auto auto; /* center horizontally */
     padding: 2em ; 
-    background: url(styles/images/fade.jpg); 
+    background: #dcf2ff;
     background-size: 7%;   /* smaller pattern */
     border-radius: 12px;
     box-shadow: 0 4px 10px gray;
