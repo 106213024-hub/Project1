@@ -778,8 +778,8 @@ textarea {
     border-collapse: collapse; /* remove double borders */
     width: 180%; /* full width */
     max-width:180%;  /* limit max width */
-    text-align: center; /
-    margin: auto; /
+    text-align: center; /* center text */
+    margin: auto; /* center table */
 }
 
 .bottom-row th,
