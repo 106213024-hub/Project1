@@ -600,8 +600,8 @@ textarea {
     grid-template-columns: 30% 70%;
     text-align: right; 
     float: right;
-    width: 120%;
-    max-width: 150%;
+    width: 60%;
+    max-width: 60%;
     margin: 2%;
     padding: 2%;
     background: #dcf2ff;
@@ -623,8 +623,9 @@ textarea {
     display: flex;
     justify-content: space-between;
     font-size: 1em;
-    margin-bottom: 8px;
-    text-align: right;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: left;
     font-weight: 500;  
     position: relative;
 }
